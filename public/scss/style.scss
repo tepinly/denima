@@ -1,0 +1,276 @@
+.denima {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(20, 20, 20) !important;
+}
+
+.bg-default {
+    background-color: white !important;
+}
+
+.drop-default {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgba(20, 20, 20, 0.75) !important;
+    transition: all .1s ease-in;
+}
+
+.drop-default:hover {
+    color: rgb(20, 20, 20) !important;
+}
+
+.home-section {
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+.panel {
+    max-width: 17%;
+    min-width: 180px;
+    border-bottom: 2px solid rgb(20, 20, 20);
+}
+
+.img-small {
+    border-bottom: 2px solid rgb(20, 20, 20);
+    max-width: 100%;
+}
+
+.login-form {
+    width: 70%;
+    text-align: start;
+}
+
+.input-field {
+    border: 1px solid gray;
+    background-color: white !important;
+    max-width: 250px;
+    border-radius: 0;
+    transition: all .1s ease-in !important;
+    box-shadow: none !important
+}
+
+#card-element {
+    max-width: 100%;
+}
+
+.input-field:focus {
+    shape-outside: none !important;
+    box-shadow: 0 0 0 1px rgb(20, 20, 20) inset !important;
+    background-color: white !important;
+    border: 1px solid rgb(20, 20, 20);
+}
+
+.login-subform {
+    border: 4px solid rgb(20, 20, 20);
+}
+
+.btn-default {
+    color: rgb(200, 200, 200);
+    background: rgb(20, 20, 20);
+    border-radius: 0;
+    transition: all .1s ease-in;
+}
+
+.btn-default:hover {
+    color: white;
+}
+
+.a-default,
+.a-default:hover,
+.a-default:focus,
+.a-default:active,
+.a-default:visited,
+.a-default:link {
+    color: dodgerblue;
+}
+
+.content {
+    min-height: 80vh;
+}
+
+.footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 15px 0 10px 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.copyright {
+    color: rgb(255, 255, 255, .5);
+    align-self: flex-end;
+}
+
+.product-action {
+    background-color: orange;
+    color: white;
+    transition: all .1s ease-in;
+}
+
+.product-action:hover {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.btn-icon,
+.btn-icon:focus,
+.btn-icon:active {
+    padding: 0;
+    margin: 0;
+    box-shadow: none !important;
+}
+
+.prod-label {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    transition: all .1s ease-in;
+}
+
+.prod-label:hover,
+.prod-label:focus {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.theme {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-product {
+    width: 65%;
+}
+
+.main-img {
+    display: inline-block;
+    padding: .5%;
+    border: 4px solid black;
+    max-width: 400px;
+    min-width: 100px;
+}
+
+button:focus,
+button:active {
+    box-shadow: none !important;
+}
+
+.cart-panel {
+    margin: 0;
+}
+
+.cart-image {
+    width: 100px;
+    border: 2px solid rgb(20, 20, 20);
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid rgb(20, 20, 20);
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+.main-title {
+    text-align: center;
+}
+
+.color-btn {
+    border-radius: 50%;
+    border: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.color-btn:focus, .color-btn:active {
+    outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        width: 100%;
+        font-size: x-small;
+    }
+
+    .main-img {
+        width: 250px;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .panel {
+        min-width: 40%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .home-section {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .panel {
+        min-width: 85%
+    }
+}
